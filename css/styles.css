@@ -38,3 +38,22 @@ body{
     background-color: #512DA8;
 }
 
+.button {
+    display: block;
+    width: 215px;
+    height: 40px;
+    background: orange;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.tab-content{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
