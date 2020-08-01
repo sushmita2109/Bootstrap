@@ -51,25 +51,11 @@ body{
     line-height: 25px;
 }
 
-.tab-content{
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 10px;
+.modal-title{
+    color:#000000;
 }
 
-.carousel {
-    background:#512DA8;
+.modal-dialog{
+    color:#000000;
+    padding: 2em; 
 }
-
-.carousel-item {
-  height: 300px;
-}
-
-.carousel-item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 300px;
-}
-

@@ -83,7 +83,82 @@
                 <div class="col-12 col-sm align-self-center">
                         <img src="img/img/logo.png" class="img-fluid" alt="logo">
                 </div>
-                <a role="button" class="btn btn-block nav-link btn-warning " data-toggle="tooltip" data-html="true" title="Or call us at <br><strong>823 12345678</strong>" data-placement="bottom" href="#reserveform">Reserve</a>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+                    Reserve the table
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal"  role="dialog" >
+                    <div class="modal-dialog" role="document" >
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h4 class="modal-title" id="tit">Reserve Table</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body row">
+                         <form action="">
+                            <label for="people">Number of people</label>
+                        <!-- Material inline 1 -->
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="materialInline1" name="inlineMaterialRadiosExample">
+                            <label class="form-check-label" for="materialInline1">1</label>
+                        </div>
+                        
+                        <!-- Material inline 2 -->
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="materialInline2" name="inlineMaterialRadiosExample">
+                            <label class="form-check-label" for="materialInline2">2</label>
+                        </div>
+                        
+                        <!-- Material inline 3 -->
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="materialInline3" name="inlineMaterialRadiosExample">
+                            <label class="form-check-label" for="materialInline3">3</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="materialInline3" name="inlineMaterialRadiosExample">
+                            <label class="form-check-label" for="materialInline3">4</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="materialInline3" name="inlineMaterialRadiosExample">
+                            <label class="form-check-label" for="materialInline3">5</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="materialInline3" name="inlineMaterialRadiosExample">
+                            <label class="form-check-label" for="materialInline3">6</label>
+                        </div>
+                            
+                            <div class="btn-group btn-group-toggle col-12 col-sm-8 col-xs-8" data-toggle="buttons">
+                                <label for="defaultForm-email" id="sec">Section</label>
+                                <label class="btn btn-secondary active btn-success">
+                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                                </label>
+                                <label class="btn btn-secondary btn-danger">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                </label>
+
+                                <div class="md-form mb-4">
+                                    <label  for="date">Date and Time</label>
+                                    <input type="text" id="date" placeholder="Date">
+                                    <input type="text" id="time" placeholder="Time">
+                                  </div>
+                                
+                                
+                         </form>
+                         </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Reserve</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -211,15 +286,7 @@
                                 <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
                                 <label class="custom-control-label" for="defaultInline1">6</label>
                             </div>
-
                             
-                            <div class="form-group">
-                                <label for="dateandtime" class="col-sd-2 col-form-label">Date and Time</label>
-                                <label class="col-sd-2 col-form-label" for="datepicker"></label>
-                                <input type="text" class="form-group" name="datepicker" id="datepicker" placeholder="Date">
-                                <label class="col-sd-2 col-form-label" for="timepicker"></label>
-                                <input type="text" class="form-group" name="timepicker" id="timepicker" placeholder="Time">
-                            </div>
                             <div class="offset-md-2 col-md-10">
                                 <button type="submit" class="btn btn-primary">Reserve</button>
                             </div>
@@ -277,11 +344,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
+    
 </body>
 
 </html>
